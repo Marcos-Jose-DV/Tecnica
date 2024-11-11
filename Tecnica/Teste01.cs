@@ -10,18 +10,19 @@ public static class Teste01
 {
     public static void ValorDaSoma()
     {
-        int indice = 13;
-        int soma = 0;
-        int k = 0;
+        string texto = "Teste 01 - Soma";
+        HeaderLength.Header(texto.Length);
+        Console.WriteLine(texto);
+
+        int indice = 13, soma = 0, k = 0;
 
         while (k < indice)
         {
             k++;
             soma += k;
         }
-        Console.WriteLine("---------------");
-        Console.WriteLine("Teste 01 - Soma");
+
         Console.WriteLine(soma);
-        Console.WriteLine("---------------\n\n");
+        HeaderLength.Exit(texto.Length);
     }
 }
